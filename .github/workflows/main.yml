@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Slack POST
     steps:
-      - name: Hello world action step
       - uses: actions/checkout@v3
       - uses: ./.github/actions/slack
         with:

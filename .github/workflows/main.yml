@@ -7,9 +7,8 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: alexuxui/slacktion@v2.0
+        uses: alexuxui/slacktion@v2.1
         with:
-          who-to-greet: 'Mona the Octocat'
           url: ${{ secrets.SLACK_WEBHOOK_URL }}
           token: ${{ secrets.TOKEN }}
       # Use the output from the `hello` step

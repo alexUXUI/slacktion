@@ -28,6 +28,13 @@ try {
             },
           },
           {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: `${body}`,
+            },
+          },
+          {
             type: "divider",
           },
           {

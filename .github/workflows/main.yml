@@ -6,7 +6,6 @@ jobs:
     name: Slack POST
     steps:
       - name: Hello world action step
-        id: hello
       - uses: actions/checkout@v3
       - uses: ./.github/actions/slack
         with:

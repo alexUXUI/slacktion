@@ -1,13 +1,22 @@
-name: "Hello World"
-description: "Greet someone and record the time"
+name: "Slack POST"
+description: "Any message you want"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
+  url: # id of input
+    description: "Slack URL"
     required: true
-    default: "World"
-outputs:
-  time: # id of output
-    description: "The time we greeted you"
+  token: # token
+    description: "Slack token"
+    required: true
+  websiteurl: # websiteurl
+    description: "Website URL"
+    required: true
+  releaseurl: # release url
+    description: "Release URL"
+    required: true
+  body: # message
+    description: "Body"
+    required: true
+
 runs:
   using: "node16"
   main: "dist/index.js"

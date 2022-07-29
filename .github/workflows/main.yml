@@ -7,9 +7,11 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: alexuxui/first-action@v1.1
+        uses: alexuxui/slacktion@v2.0
         with:
           who-to-greet: 'Mona the Octocat'
+          url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          token: ${{ secrets.TOKEN }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"

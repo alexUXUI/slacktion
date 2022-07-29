@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: ./.github/actions/slack
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/slack
         with:
           url: ${{ secrets.SLACK_WEBHOOK_URL }}
           token: ${{ secrets.TOKEN }}

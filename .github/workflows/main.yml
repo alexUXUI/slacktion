@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: alexuxui/slacktion@v2.2
+        uses: ./.github/actions/slack
         with:
           url: ${{ secrets.SLACK_WEBHOOK_URL }}
           token: ${{ secrets.TOKEN }}
